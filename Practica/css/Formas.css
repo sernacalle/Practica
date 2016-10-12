@@ -1,0 +1,38 @@
+﻿.f-itm { background-color: #FFF }
+.f-alt { background-color: #F0F0F0 }
+.f-general1 { line-height: 3.3em; margin: auto; width: 480px }
+.f-general2 { line-height: 3.3em; margin: auto; width: 720px }
+.f-general3 { line-height: normal; margin: auto; width: 720px }
+.f-ingreso { line-height: 3.3em; margin: auto; margin-bottom: 100px; margin-top: 150px; width: 360px }
+
+.f-lista1, .f-lista2 { font-size: 1.15em; margin: 0 auto; margin-top: 25px !important }
+.f-lista1 { width: 720px }
+.f-lista2 { width: 100% }
+
+.f-fila1 { border-top: 1px dashed #CCC; line-height: 1.4em; padding: 5px 0; vertical-align: middle }
+
+.f-int1 { padding: 0 5px }
+.f-c50 { float: left; width: 50% }
+
+.f-b { text-align: right }
+.f-paragrafo { overflow: hidden }
+.f-semaforo { border-radius: 50%; display: inline-block; height: 1.4em; width: 1.4em }
+.f-sem-rojo { background-color: #D00 }
+.f-sem-verde { background-color: #0C0 }
+.f-sombra { -webkit-box-shadow: 5px 5px 5px 0 rgba(200,200,200,0.35); -moz-box-shadow: 5px 5px 5px 0 rgba(200,200,200,0.35); box-shadow: 5px 5px 5px 0 rgba(200,200,200,0.35); }
+
+@media screen and (max-width: 720px) {
+  .f-general2 { width: 98% }
+  .f-general3 { width: 98% }
+  .f-lista1 { width: 98% }
+  .f-lista2 { width: 98% }
+}
+
+@media screen and (max-width: 480px) {
+  .f-general1 { width: 98% }
+  .f-ingreso { margin-bottom: 60px; margin-top: 30px; width: 98% }
+}
+
+@media screen and (max-width: 360px) {
+  .f-ingreso { width: 98% }
+}
