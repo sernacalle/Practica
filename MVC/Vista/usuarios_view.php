@@ -16,12 +16,13 @@ td {
 
 <body>
 <table>
-<tr><td>Nombre del usuario</td></tr>
+<tr><td>Nombre del usuario</td><td>Contraseña</td></tr>
 <?php
 
-	foreach($matrizUsuario as $registro){
+	foreach($matrizUsuarios as $registro){
 		
-		echo "<tr><td>". $registro["Usuarios"] . "</tr></td>";
+		echo "<tr><td>". $registro["USUARIOS"] . "</td>". "<td>". $registro["PASSWORD"] . "</td></tr>";
+	
 		}
 
 ?>

@@ -6,7 +6,7 @@
 		
 		public function __construct(){
 			
-			require_once("Conectar.php");
+			require_once("Modelo/Conectar.php");
 			$this->db=Conectar::conexion();
 			
 			$this->usuarios=array();

@@ -16,10 +16,10 @@
 					die("Error" . $e->getMessage());
 					echo "Linea del error" . $e->getLine();
 					}
-				return $conexion
-			
-			}
+				return $conexion;
+						}
 		}
+		
 
 
 ?>
