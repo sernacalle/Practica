@@ -1,21 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-<style>
-td {
-	border:1px dotted #060;
-	}
+<?php
 
-</style>
+require("Vista/header.php");
 
-
-
-</head>
-
-<body>
-<table>
+?>
+<table class= "table3">
 <tr><td>Nombre del usuario</td><td>Contraseña</td></tr>
 <?php
 
@@ -27,5 +15,7 @@ td {
 
 ?>
 </table>
-</body>
-</html>
+<?php
+require("Vista/footer.php");
+
+?>
