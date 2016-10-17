@@ -413,7 +413,7 @@ textarea:not(:focus):valid ~ .floating-label {
   top: 0;
 }
 .form1 {margin: 100px auto;width: 300px;border: 1px solid #666;padding: 30px;background-color: #F7F7F7;}
-input[type="submit"]{margin: 10px 0;border: 0;background-color: #CCC ;color: #FFF ;padding: 20 px;width: 100px;}
+
 label {display:inline-block;width:100px;margin-bottom: 14px;}
 input {padding: 5px;border-radius: 5px;border: 1px solid #CCCCCC;}
 body {background-color:#F7F7F7;}

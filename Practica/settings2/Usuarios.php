@@ -1,53 +1,13 @@
-﻿<!doctype html>
-<html lang='es'>
-<head>
-<meta charset="utf-8">
-<title>Saitemp Login</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="//fonts.googleapis.com/css?family=Sorts Mill Goudy:300,400,500,700|PT+Sans:400,700" rel="stylesheet" type="text/css" />
-<link href="/practica/css/hv.css" rel="stylesheet" />
-</head>
 
-<body>
-<header class="m-header m-150min m-bg-verde">
-    <div class="rwd-principal">
-          <div class="rwd-25">
-            <a href="http://www.saitempsa.com/"><img class="logo" src="/practica/IMG/logo.png" alt="logo"/></a>
-          </div>
-          <div class="rwd-75">
-            <div class="a-der">
-              <span class="txtSocialB">Síguenos:</span>
-              <a href="//www.facebook.com/Saitemp-SA-416952755069214/" target="_blank"><img style="vertical-align:middle;" src="/practica/IMG/icoFB.png" alt="logoFB"/></a>
-			  <a href="//twitter.com/saitempsa" target="_blank"><img style="vertical-align:middle;" src="/practica/IMG/icoTW.png" alt="logoTW"/></a>
-              <a href="//plus.google.com/117774464087679719579/posts" target="_blank"><img style="vertical-align:middle;" src="/practica/IMG/icoIN.png" alt="logoIN" /></a>
-            </div>
-          </div>
-          <div class="reset"></div> 
-  </div>
-</header>
-      
-      
-      <br>
-      <nav class="m-bg-verde">
-        <div class="rwd-principal">
-</div>
-      </nav>
-
-<section>
-  <div class="h-banner"></div>
-</section>
 <?php
-	$base=new PDO ("mysql:host =localhost; dbname=kr000262_db", "root", "");
-		$base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="SELECT * FROM wp_forms3 WHERE intref = '1'";
-		
-$info=$base->prepare($sql);
-		$info->execute(array($sql));
-					while($info=$info->fetch(PDO::FETCH_ASSOC)){
-
+$link = mysql_connect('localhost', 'root', '');
+mysql_set_charset('utf8', $link);
+$db_selected = mysql_select_db('kr000262_db', $link);
+$data = mysql_query("SELECT * FROM wp_forms3 WHERE intref = '1'")
+or die(mysql_error());
+while($info = mysql_fetch_array( $data ))
 {?>
 
-<style>table td {padding:4px 10px;}</style>
 
 <form action="updater.php" method="post">
 <table style="margin: 30px 0 30px 46px;">
@@ -71,27 +31,4 @@ $info=$base->prepare($sql);
 <tr><td colspan="5"><input type="submit" value="Guardar"></td></tr>
 </table>
 </form>
-<?php }}?>
-
-<footer class="m-150min m-bg-azul">
-        <div class="rwd-principal a-cen">
-<hr>
-<!--Direcciones-->
-<table>
-    <tr> <td>
-    	Saitemp Medellín - Colombia Tel: (+574) 448 5744 <br>
-	Calle 51 #49–11 Ed. Fabricato Of. 1005 
-</td><td>
-      	Saitemp Bogotá - Colombia Tel: (+571) 742 0219<br>
-	Carrera 21 #58-56 Sector Galerías
-</td><td>
-	Saitemp Cartagena - Colombia Tel: (+575) 643 6761<br>
-Transversal 54 #28-25 Ed. Movisol, of. 305
-   </td></tr>
-</table>
-	<hr> 
-        </div>
-	
-      </footer>  
-</body>
-</html>
+<?php }?>

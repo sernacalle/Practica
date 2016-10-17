@@ -1,0 +1,35 @@
+﻿<?php
+$link = mysql_connect('localhost', 'kr000262_db', 'Holden321');
+$db_selected = mysql_select_db('kr000262_db', $link);
+mysql_query("UPDATE wp_forms3 SET nombre1 = '".$_POST[nombre1]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo1 = '".$_POST[correo1]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre2 = '".$_POST[nombre2]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo2 = '".$_POST[correo2]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre3 = '".$_POST[nombre3]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo3 = '".$_POST[correo3]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre4 = '".$_POST[nombre4]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo4 = '".$_POST[correo4]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre5 = '".$_POST[nombre5]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo5 = '".$_POST[correo5]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre6 = '".$_POST[nombre6]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo6 = '".$_POST[correo6]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre7 = '".$_POST[nombre7]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo7 = '".$_POST[correo7]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre8 = '".$_POST[nombre8]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo8 = '".$_POST[correo8]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre9 = '".$_POST[nombre9]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo9 = '".$_POST[correo9]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre10 = '".$_POST[nombre10]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo10 = '".$_POST[correo10]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre11 = '".$_POST[nombre11]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo11 = '".$_POST[correo11]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre12 = '".$_POST[nombre12]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo12 = '".$_POST[correo12]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre13 = '".$_POST[nombre13]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo13 = '".$_POST[correo13]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre14 = '".$_POST[nombre14]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo14 = '".$_POST[correo14]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET nombre15 = '".$_POST[nombre15]."' WHERE intref = '1'") or die(mysql_error());
+mysql_query("UPDATE wp_forms3 SET correo15 = '".$_POST[correo15]."' WHERE intref = '1'") or die(mysql_error());
+echo '<script>location.href="/seguro/settings";</script>';
+?>

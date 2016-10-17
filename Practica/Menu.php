@@ -18,7 +18,7 @@ echo "<br>". "Bienvenido: " . $_SESSION["usuario"]. "<br>";
   	<td><a href="/practica/index.php">OFERTAS</a></td>
     <td><a href="/practica/Cv.php">HOJAS DE VIDA</a></td >
     <td><a href="/practica/contact/index.php">MENSAJES</a></td >
-    <td><a href="/practica/settings/index.php">ADMIN</a></td>
+    <td><a href="/practica/settings2/index.php">ADMIN</a></td>
   </tr>
 </table>
 </div>
